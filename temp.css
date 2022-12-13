@@ -1,0 +1,51 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.box1{
+  grid-area: header;
+}
+.box2{
+grid-area: main;
+    
+}
+.box3{
+  grid-area: menu;
+    
+}
+.box4{
+  grid-area:aside;
+    
+}
+.box5{
+  grid-area:footer;
+    
+}
+.main{
+    display: grid;
+    margin: 4rem;
+    border: 2px solid white;
+    height: 40rem;
+    width: 80%;
+   grid-template-areas: 
+   ' header header header header header'
+   ' header header header header header'
+
+   ' menu main main main aside'
+   ' menu main main main aside'
+
+   'footer footer footer footer footer '
+   'footer footer footer footer footer ';
+
+   gap: 10px;
+   background-color: aqua;
+}
+.main div{
+    background-color: blue;
+    border: 1px solid red;
+    border-radius: 2rem;
+}
